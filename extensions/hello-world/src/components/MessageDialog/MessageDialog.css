@@ -1,0 +1,122 @@
+.messageDialog {
+  background-color: #151a1f;
+  border: 0;
+  border-radius: 8px;
+  min-width: 400px;
+  position: fixed;
+  transform: translate(-25%, -25%);
+}
+
+.messageDialog .header {
+  border-bottom-color: #000;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  padding: 19px 22px 17px;
+  position: relative;
+}
+
+.messageDialog .header .title {
+  color: #91b9cd;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 24px;
+  margin: 0;
+  padding-right: 40px;
+}
+
+.messageDialog .header .closeBtn {
+  color: #91b9cd;
+  cursor: pointer;
+  height: 20px;
+  opacity: 1;
+  overflow: hidden;
+  padding: 2px;
+  position: absolute;
+  right: 21px;
+  text-shadow: none;
+  text-align: center;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color 0.3s ease;
+  -webkit-transform: translateY(-50%);
+  width: 20px;
+}
+
+.messageDialog .header .closeIcon {
+  color: transparent;
+  display: block;
+  height: 100%;
+  font-size: 0;
+  line-height: 0;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.messageDialog .header .closeIcon:after,
+.messageDialog .header .closeIcon:before {
+  content: ' ';
+  display: block;
+  height: 2px;
+  transition: background-color 0.3s ease;
+  width: 19px;
+  background-color: #91b9cd;
+}
+
+.messageDialog .header .closeIcon:hover:after,
+.messageDialog .header .closeIcon:hover:before {
+  background-color: #6d93a7;
+}
+
+.messageDialog .header .closeIcon:before {
+  left: 1px;
+  position: absolute;
+  top: 1px;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  -webkit-transform-origin: 1px 50%;
+  transform-origin: 1px 50%;
+}
+
+.messageDialog .header .closeIcon:after {
+  right: 1px;
+  position: absolute;
+  top: 1px;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  -webkit-transform-origin: calc(100% - 1px) 50%;
+  transform-origin: calc(100% - 1px) 50%;
+}
+
+.messageDialog .content {
+  padding: 24px 16px;
+  color: #fff;
+}
+
+.messageDialog .footer {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 12px;
+  width: 100%;
+}
+
+.messageDialog .footer .btn-confirm {
+  transition: background-color 0.3s ease;
+  background-color: #337ab7;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 400;
+  height: 37px;
+  line-height: 37px;
+  padding: 0 12px;
+  width: 100%;
+}
+
+.messageDialog .footer .btn-confirm:hover {
+  background-color: #4c9de4;
+}
