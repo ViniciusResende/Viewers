@@ -24,6 +24,7 @@ import ReactDOM from 'react-dom';
  * the defaultExtensions property.
  */
 import OHIFVTKExtension from '@ohif/extension-vtk';
+import HelloWorldExtension from '../../../extensions/hello-world/src/index';
 import OHIFDicomHtmlExtension from '@ohif/extension-dicom-html';
 import OHIFDicomSegmentationExtension from '@ohif/extension-dicom-segmentation';
 import OHIFDicomRtExtension from '@ohif/extension-dicom-rt';
@@ -48,6 +49,7 @@ const appProps = {
   config,
   defaultExtensions: [
     OHIFVTKExtension,
+    HelloWorldExtension,
     OHIFDicomHtmlExtension,
     OHIFDicomMicroscopyExtension,
     OHIFDicomPDFExtension,
