@@ -76,6 +76,7 @@ export default function init({ servicesManager, configuration }) {
       csTools.EllipticalRoiTool,
       csTools.DragProbeTool,
       csTools.RectangleRoiTool,
+      csTools.TextTypeTool,
     ],
     other: [
       csTools.PanTool,
@@ -100,6 +101,14 @@ export default function init({ servicesManager, configuration }) {
   /* Add extension tools configuration here. */
   const internalToolsConfig = {
     ArrowAnnotate: {
+      configuration: {
+        getTextCallback: (callback, eventDetails) =>
+          callInputDialog(null, eventDetails, callback),
+        changeTextCallback: (data, eventDetails, callback) =>
+          callInputDialog(data, eventDetails, callback),
+      },
+    },
+    TextType: {
       configuration: {
         getTextCallback: (callback, eventDetails) =>
           callInputDialog(null, eventDetails, callback),
