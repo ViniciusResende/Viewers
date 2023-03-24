@@ -10,6 +10,7 @@ import { angle } from './angle';
 import { targetCR } from './targetCR';
 import { targetNE } from './targetNE';
 import { targetUN } from './targetUN';
+import { textType } from './textType';
 import dicomSRDisplayTool from './dicomSRDisplayTool';
 
 export {
@@ -25,5 +26,6 @@ export {
   targetCR,
   targetNE,
   targetUN,
+  textType,
   dicomSRDisplayTool,
 };

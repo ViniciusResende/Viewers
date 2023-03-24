@@ -83,6 +83,7 @@ import thLarge from './icons/th-large.svg';
 import thList from './icons/th-list.svg';
 import times from './icons/times.svg';
 import trash from './icons/trash.svg';
+import typeIcon from './icons/type.svg';
 import unlink from './icons/unlink.svg';
 import user from './icons/user.svg';
 import youtube from './icons/youtube.svg';
@@ -170,6 +171,7 @@ const ICONS = {
   rotate,
   'rotate-right': rotateRight,
   trash,
+  type: typeIcon,
   unlink,
   'exclamation-circle': exclamationCircle,
   link,
